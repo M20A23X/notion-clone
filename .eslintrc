@@ -83,7 +83,7 @@
       "typescript": {
         "extensions": [
           ".ts",
-          "d.ts",
+          ".d.ts",
           ".tsx"
         ],
         "moduleDirectory": [
