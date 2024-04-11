@@ -6,6 +6,8 @@ import { Router } from '#/types/router';
 
 import { PAGE_URL } from '#/assets/static/router';
 
+import { Layout } from 'ui/Layout';
+
 interface IRouterProvider {
     router: Router;
 }
@@ -18,7 +20,7 @@ export const RouterProvider: FC<IRouterProvider> = ({ router }) => {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path={PAGE_URL.root} element={<></>}>
+                <Route path={PAGE_URL.root} element={<Layout />}>
                     {routes}
                 </Route>
             </Routes>

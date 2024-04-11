@@ -1,0 +1,30 @@
+@use "./constants" as c;
+
+.dropdown-toggle {
+  padding: 0 !important;
+  color: inherit !important;
+  text-transform: none !important;
+
+  &::after {
+    width: c.$dropdown-arrow-size;
+    height: c.$dropdown-arrow-size;
+    margin-left: c.$dropdown-arrow-ms;
+    vertical-align: middle;
+    background-color: c.$nav-color;
+    border: none;
+    filter: c.$dropdown-arrow-shadow;
+    mask-image: url("../assets/images/layout/header/nav-caret.svg");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 100%;
+  }
+
+  &:hover::after {
+    transform: rotate(180deg);
+  }
+}
+
+.dropdown-menu.show {
+  padding: 0;
+  border: none;
+}

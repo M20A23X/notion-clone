@@ -1,0 +1,182 @@
+@use "styles/index" as s;
+
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  padding: 1em;
+  font-family: s.$font-family-sans;
+}
+
+.pageNav {
+  display: flex;
+  align-items: center;
+  height: s.$nav-h !important;
+  color: s.$nav-color;
+  font-size: s.$nav-fz;
+  -webkit-text-stroke: s.$nav-item-text-stroke;
+
+  span::first-letter, a::first-letter {
+    text-transform: uppercase
+  }
+}
+
+.action {
+  &s {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    height: 100%;
+    margin-left: s.$nav-actions-ms;
+  }
+
+  &Group {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+}
+
+.nav {
+  &Brand {
+    height: 100%;
+  }
+
+  &Btn {
+    margin-right: s.$nav-item-pe;
+    padding: s.$nav-item-p !important;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    &.signUpBtn {
+      height: 100%;
+      color: white !important;
+      font-weight: s.$nav-fw-secondary;
+      background-color: s.$nav-bg-black;
+      box-shadow: s.$shadow ;
+      -webkit-text-stroke: unset;
+
+      &:hover {
+        background-color: s.tint-color(s.$nav-bg-black, 15%);
+      }
+    }
+  }
+
+  &Item {
+    align-content: center;
+    height: 100%;
+    letter-spacing: s.$dropdown-letter-spacing;
+    border-radius: s.$nav-item-br;
+
+    &:hover {
+      background-color: s.$nav-item-hov-bg;
+    }
+
+    &:active {
+      background-color: s.$nav-item-act-bg;
+    }
+
+    &Active {
+      height: 100%;
+      padding: 0;
+      background-color: s.$nav-item-act-bg;
+      border-radius: s.$nav-item-br;
+
+      &:hover {
+        background-color: s.$nav-item-act-bg;
+      }
+    }
+
+    &Bootstrap > a {
+      padding: s.$nav-item-p !important;
+    }
+  }
+
+  &Divider {
+    border-right: s.$dropdown-menu-b;
+    border-radius: 0;
+
+    &Sm {
+      display: inline-block;
+      height: 75%;
+      margin-right: s.$nav-item-pe;
+      border-right: s.$dropdown-menu-b;;
+    }
+  }
+}
+
+.dropdown {
+  height: 100%;
+  border-radius: inherit;
+
+  &Menu {
+    display: flex;
+    border-radius: s.$nav-item-br !important;
+    box-shadow: s.$shadow !important;
+  }
+
+  &Column {
+    min-width: s.$dropdown-col-min-w;
+    padding: s.$dropdown-item-p;
+    padding-right: s.$nav-item-pe;
+    line-height: s.$dropdown-item-text-lh;
+
+    &Header {
+      padding-top: s.$dropdown-item-p;
+      padding-left: s.$dropdown-item-px;
+      color: s.$nav-color-secondary;
+      font-weight: normal;
+      font-size: s.$dropdown-item-header-fz;
+      letter-spacing: s.$dropdown-letter-spacing;
+      text-transform: uppercase;
+    }
+
+    &Note {
+      display: inline-block;
+      margin-top: s.$dropdown-item-px;
+      padding-right: calc(#{s.$dropdown-item-text-pe} + #{s.$nav-item-pe});
+      padding-left: s.$dropdown-item-px;
+      color: s.$nav-color-secondary;
+      font-size: s.$nav-fz-secondary;
+      line-height: inherit;
+
+      & a {
+        text-decoration: underline !important;
+      }
+    }
+  }
+
+  &Item {
+    display: flex !important;
+    padding: s.$dropdown-item-p 0 !important;
+
+    &Icon {
+      box-sizing: content-box;
+      width: s.$dropdown-item-icon-w;
+      padding-left: s.$dropdown-item-px;
+
+      &Svg {
+        width: s.$dropdown-item-svg-w;
+      }
+    }
+
+    &Text {
+      display: inline-flex;
+      flex-direction: column;
+      padding-right: s.$dropdown-item-text-pe;
+      padding-left: s.$dropdown-item-px;
+    }
+
+    &Description {
+      color: s.$nav-color-secondary;
+      font-size: s.$nav-fz-secondary;
+      line-height: s.$dropdown-item-description-lh;
+      letter-spacing: s.$dropdown-letter-spacing;
+    }
+  }
+}
+
+

@@ -1,0 +1,37 @@
+$font-family-sans: inter-var, -apple-system, blinkmacsystemfont, "Segoe UI", helvetica, "Apple Color Emoji", arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+$shadow: 0 .25em 1.125em rgb(0 0 0 / 4%), 0 .1265em .49em rgb(0 0 0 / 2.7%), 0 .05em .1828em rgb(0 0 0 / 2%), 0 .0109em .065em rgb(0 0 0 / 1.3%);
+
+
+// Header
+$header-item-h: 1.875em;
+
+// Nav
+$nav-h: 2em;
+$nav-color: rgb(5 5 5);
+$nav-color-secondary: rgb(0 0 0 / 60%);
+$nav-bg-black: rgb(18 18 18);
+$nav-item-hov-bg: rgb(245 245 245);
+$nav-item-act-bg: rgb(240 240 240);
+$nav-actions-ms: .8125em;
+$nav-fw-secondary: 500;
+$nav-fz: .9375em;
+$nav-fz-secondary: .8438em;
+$nav-item-br: .3125em;
+$nav-item-p: 0 .625em;
+$nav-item-pe: 1em;
+$nav-item-text-stroke: .02em $nav-color-secondary;
+$dropdown-arrow-ms: .5em;
+$dropdown-arrow-shadow: drop-shadow(.01em .01em .01em rgba($nav-color, .75));
+$dropdown-arrow-size: .5em;
+$dropdown-col-min-w: 11.25em;
+$dropdown-col-note-mt: 1.25em;
+$dropdown-item-description-lh: 1.2em;
+$dropdown-item-header-fz: .6875em;
+$dropdown-item-icon-w: 2.5em;
+$dropdown-item-p: .25em;
+$dropdown-item-px: .625em;
+$dropdown-item-svg-w: 1.35em;
+$dropdown-item-text-lh: 1.4063em;
+$dropdown-item-text-pe: 1.25em;
+$dropdown-letter-spacing: .03em;
+$dropdown-menu-b: 1px solid rgb(220 220 220);
